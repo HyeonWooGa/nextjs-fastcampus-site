@@ -1,3 +1,6 @@
+import Banner from "@/components/Banner";
+import LectureGroup from "@/components/lecture/LectureGroup";
+import Menu from "@/components/Menu";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
@@ -12,17 +15,11 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <nav aria-label="fastcampus">
-        <h1>Fast Campus</h1>
-      </nav>
+      <Menu />
 
-      <div role="banner">
-        <h1>배너</h1>
-      </div>
+      <Banner />
 
-      <div title="lectureList">
-        <h1>강의 목록</h1>
-      </div>
+      <LectureGroup />
 
       <footer className={styles.footer}>
         <a
